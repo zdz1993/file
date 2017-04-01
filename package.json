@@ -1,0 +1,13 @@
+{
+  "name": "file",
+  "version": "1.0.0",
+  "description": "file name",
+  "author": "zdz",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
