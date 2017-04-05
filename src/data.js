@@ -12,7 +12,7 @@ connection.connect();
 connection.query("SELECT * from platform_text", function(err, rows, fields) {
   if (err) throw err;
   console.log("SELECT ==> ");
-  for (var i in rows) {
+  for (let i in rows) {
     console.log(rows[i]);
   }
 });
