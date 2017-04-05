@@ -1,4 +1,4 @@
-var mysql =  require("mysql");
+let mysql = require("mysql");
 let connection = mysql.createConnection({
   host: "10.19.144.50",
   port: "8337",
@@ -9,9 +9,12 @@ let connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query("SELECT 1 + 1 AS solution", function(err, rows, fields) {
+connection.query("SELECT * from platform_text", function(err, rows, fields) {
   if (err) throw err;
-  console.log("The solution is: ", rows[0].solution);
+  console.log("SELECT ==> ");
+  for (var i in rows) {
+    console.log(rows[i]);
+  }
 });
 
 connection.end();

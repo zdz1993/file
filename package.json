@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/babel ./src --out-dir ./lib",
-    "build-watch": "npm run eslint && ./node_modules/.bin/babel ./src --out-dir ./lib --watch"
+    "watch": "./node_modules/.bin/babel ./src --out-dir ./lib --watch"
   },
   "engines": {
     "node": ">= 4.0.0",
