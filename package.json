@@ -5,7 +5,13 @@
   "author": "zdz",
   "private": true,
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel": "^5.5.4"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel ./src --out-dir ./lib",
+    "build-watch": "npm run eslint && ./node_modules/.bin/babel ./src --out-dir ./lib --watch"
+  },
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
